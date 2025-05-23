@@ -1,4 +1,6 @@
-This repo contains a MCP server got [gabi](https://github.com/app-sre/gabi).
+# Gabi MCP server
+
+This repo contains a MCP server for [gabi](https://github.com/app-sre/gabi).
 
 For now, to run it within vscode with copilot for example:
 
