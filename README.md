@@ -21,7 +21,7 @@ For now, to run it within vscode with copilot for example:
         "-e",
         "GABI_ENDPOINT=<your Gabi instance URL>",
         "-e",
-        "GABI_TOKEN=<Your Openshift token: oc whomai -t>",
+        "GABI_TOKEN=<Your Openshift token: oc whoami -t>",
         "localhost/gabi-mcp-server:latest"
       ]
     }
