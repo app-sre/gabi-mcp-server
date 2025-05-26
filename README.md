@@ -5,8 +5,7 @@ This repo contains a MCP server for [gabi](https://github.com/app-sre/gabi).
 For now, to run it within vscode with copilot for example:
 
 * clone this repository
-* run `make build` (uses podman)
-* `oc login` to the cluster running gabi
+* run `make build`. This uses podman to create an image `localhost/gabi-mcp-server:latest`` locally
 * add the following the your vscode workspace `.vscode/mcp.json` file:
 
 ```json
@@ -29,11 +28,11 @@ For now, to run it within vscode with copilot for example:
 }
 ```
 
+* `oc login` to the cluster running gabi and update your token in the file above. These expire typically every 24h.
+
 You can now chat with Copilot in VSCode:
 
-```
-run `select * from cars` on gabi and show the output
-```
+> run `select * from cars` on gabi and show the output
 
 Example output (from real life):
 
@@ -52,3 +51,4 @@ Example output (from real life):
 > | Ford	| Mustang | 1964 |
 >
 > As you can see, there's one row in the cars table with a Ford Mustang
+
